@@ -2,7 +2,7 @@
 
 
 ## Deploy to github pages
-
+`ng build --prod --base-href https://itswadesh.github.io/shopnx-doc/`
 
 ## Development server
 

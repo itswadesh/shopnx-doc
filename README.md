@@ -2,7 +2,9 @@
 
 
 ## Deploy to github pages
+`npm i -g angular-cli-ghpages`
 `ng build --prod --base-href https://itswadesh.github.io/shopnx-doc/`
+`ngh`
 
 ## Development server
 

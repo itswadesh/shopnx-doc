@@ -1,5 +1,5 @@
 <md-toolbar color="primary">
-  <button type="button" md-icon-button (click)="sidenav.open()">
+  <button type="button" md-icon-button (click)="sidenav.toggle()">
     <md-icon>menu</md-icon>
   </button>
   <h1>Documentation: ShopNx</h1>
@@ -12,16 +12,9 @@
       <md-list-item routerLink="/" routerLinkActive="active-link">
         <button md-icon-button>
             <md-icon md-menu-align-target>computer</md-icon>
-            Step-1. Prerequisites
+            Step-1. Start
           </button>
       </md-list-item>
-      <!--
-      <md-list-item routerLink="/installation/npm" routerLinkActive="active-link">
-        <button md-icon-button>
-            <md-icon md-menu-align-target>developer_mode</md-icon>
-            Step-2. Run & Deploy
-          </button>
-      </md-list-item>-->
 
       <h3 md-subheader>Settings</h3>
       <md-divider></md-divider>
@@ -52,11 +45,32 @@
               Usage
             </button>
       </md-list-item>
-      <md-list-item routerLink="/usage/features" routerLinkActive="active-link">
+
+      <h3 md-subheader>Features</h3>
+      <md-divider></md-divider>
+      <md-list-item routerLink="/features/new" routerLinkActive="active-link">
         <button md-icon-button>
-              <md-icon md-menu-align-target>spellcheck</md-icon>
-              Features
-            </button>
+          <md-icon md-menu-align-target>trending_up</md-icon>
+          Features
+        </button>
+      </md-list-item>
+      <md-list-item routerLink="/features/front" routerLinkActive="active-link">
+        <button md-icon-button>
+          <md-icon md-menu-align-target>picture_in_picture</md-icon>
+          Font Office Features
+        </button>
+      </md-list-item>
+      <md-list-item routerLink="/features/back" routerLinkActive="active-link">
+        <button md-icon-button>
+          <md-icon md-menu-align-target>local_shipping</md-icon>
+          Back Office Features
+        </button>
+      </md-list-item>
+      <md-list-item routerLink="/features/future" routerLinkActive="active-link">
+        <button md-icon-button>
+          <md-icon md-menu-align-target>hourglass_full</md-icon>
+          Future Plan
+        </button>
       </md-list-item>
 
 
@@ -70,14 +84,14 @@
       </md-list-item>
       <md-list-item routerLink="/overview/client" routerLinkActive="active-link">
         <button md-icon-button>
-              <md-icon md-menu-align-target>phonelink</md-icon>
+              <md-icon md-menu-align-target>developer_mode</md-icon>
               Client
             </button>
       </md-list-item>
 
       <md-list-item routerLink="/overview/server" routerLinkActive="active-link">
         <button md-icon-button>
-              <md-icon md-menu-align-target>developer_mode</md-icon>
+              <md-icon md-menu-align-target>phonelink</md-icon>
               Server
             </button>
       </md-list-item>

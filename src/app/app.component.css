@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+}
+
+.sidenav {
+  width:300px;
+}
+.active-link {
+  color: #03a9f4;
+}
+
+.z2 {
+      box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}
+.sidenav-content{
+  margin-left:15px;
+}

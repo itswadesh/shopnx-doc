@@ -1,16 +1,90 @@
-
 <md-toolbar color="primary">
+  <button type="button" md-icon-button (click)="sidenav.open()">
+    <md-icon>menu</md-icon>
+  </button>
   <h1>Documentation: ShopNx</h1>
 </md-toolbar>
-<md-sidenav-container class="example-container">
-  <md-sidenav #sidenav class="example-sidenav">
-    Jolly good!
+<md-sidenav-container class="container">
+  <md-sidenav #sidenav class="sidenav z2" mode="side" opened="true">
+    <md-nav-list>
+      <h3 md-subheader>Installation</h3>
+      <md-divider></md-divider>
+      <md-list-item routerLink="/" routerLinkActive="active-link">
+        <button md-icon-button>
+            <md-icon md-menu-align-target>computer</md-icon>
+            Step-1. Prerequisites
+          </button>
+      </md-list-item>
+      <!--
+      <md-list-item routerLink="/installation/npm" routerLinkActive="active-link">
+        <button md-icon-button>
+            <md-icon md-menu-align-target>developer_mode</md-icon>
+            Step-2. Run & Deploy
+          </button>
+      </md-list-item>-->
+
+      <h3 md-subheader>Settings</h3>
+      <md-divider></md-divider>
+      <md-list-item routerLink="/settings/environment" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>perm_data_setting</md-icon>
+              Environment Settings
+            </button>
+      </md-list-item>
+      <md-list-item routerLink="/settings/client" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>settings_applications</md-icon>
+              Client Settings
+            </button>
+      </md-list-item>
+      <md-list-item routerLink="/settings/server" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>settings_applications</md-icon>
+              Server Settings
+            </button>
+      </md-list-item>
+
+      <h3 md-subheader>Usage</h3>
+      <md-divider></md-divider>
+      <md-list-item routerLink="/usage/use" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>mouse</md-icon>
+              Usage
+            </button>
+      </md-list-item>
+      <md-list-item routerLink="/usage/features" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>spellcheck</md-icon>
+              Features
+            </button>
+      </md-list-item>
+
+
+      <h3 md-subheader>Project Overview</h3>
+      <md-divider></md-divider>
+      <md-list-item routerLink="/overview/root" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>merge_type</md-icon>
+              Project Root
+            </button>
+      </md-list-item>
+      <md-list-item routerLink="/overview/client" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>phonelink</md-icon>
+              Client
+            </button>
+      </md-list-item>
+
+      <md-list-item routerLink="/overview/server" routerLinkActive="active-link">
+        <button md-icon-button>
+              <md-icon md-menu-align-target>developer_mode</md-icon>
+              Server
+            </button>
+      </md-list-item>
+
+    </md-nav-list>
   </md-sidenav>
-
-  <div class="example-sidenav-content">
-    <button type="button" md-button (click)="sidenav.open()">
-      Open sidenav
-    </button>
+  <div class="sidenav-content">
+    <router-outlet></router-outlet>
   </div>
-
 </md-sidenav-container>

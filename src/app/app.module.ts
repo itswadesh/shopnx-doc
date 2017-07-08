@@ -11,14 +11,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { OverviewClientComponent } from './overview/client/client.component';
 import { OverviewServerComponent } from './overview/server/server.component';
 import { MdButtonModule, MdIconModule, MdSidenavModule, MdToolbarModule, MdListModule, MdCardModule, MdMenuModule } from '@angular/material';
-
-/* Import prism core */
-import 'prismjs/prism';
-
-/* Import the language you need to highlight */
-import 'prismjs/components/prism-typescript';
-
-import { PrismComponent } from 'angular-prism';
+import { PrismModule } from '@ngx-prism/core';
 import { ClientComponent } from './settings/client/client.component';
 import { ServerComponent } from './settings/server/server.component';
 import { FeaturesComponent } from './features/features.component';
@@ -51,7 +44,6 @@ const routes: Routes = [
     OverviewComponent,
     OverviewClientComponent,
     OverviewServerComponent,
-    PrismComponent,
     ClientComponent,
     ServerComponent,
     FeaturesComponent,
@@ -64,6 +56,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MdButtonModule, MdIconModule, MdSidenavModule, MdToolbarModule, MdListModule, MdCardModule, MdMenuModule,
+    PrismModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],

@@ -534,7 +534,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/installation/installation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Installation Instructions</h2>\n<div>\n  <h3>Softwares</h3>\n  <ul>\n    <li><a target=\"blank\" href=\"https://nodejs.org/en/\">NodeJS (Web Server)</a></li>\n    <li><a target=\"blank\" href=\"https://www.mongodb.com/\">MongoDB (Database)</a></li>\n  </ul>\n  <h3>Start mongodb in a separate shell</h3>\n  <p>In Windows operating system we can start it by opening the following file</p>\n  <prism-block [language]=\"'javascript'\">\n    {{mongo}}\n  </prism-block>\n\n  <h3>Run the following 2 commands</h3>\n  <p>This will install the required node dependencies and start the Server at <a target=\"blank\" href=\"http://localhost:4200\">http://localhost:4200</a></p>\n  <prism-block [language]=\"'javascript'\">\n    {{cli}}\n  </prism-block>\n</div>"
+module.exports = "<h2>Installation Instructions</h2>\n<div>\n  <h3>Softwares</h3>\n  <ul>\n    <li><a target=\"blank\" href=\"https://nodejs.org/en/\">NodeJS (Web Server)</a></li>\n    <li><a target=\"blank\" href=\"https://www.mongodb.com/\">MongoDB (Database)</a></li>\n  </ul>\n  <h3>Start mongodb in a separate shell</h3>\n  <p>In Windows operating system we can start it by opening the following file</p>\n  <prism-block [code]=\"mongo\" [language]=\"'javascript'\"></prism-block>\n\n  <h3>Run the following 2 commands</h3>\n  <p>This will install the required node dependencies and start the Server at <a target=\"blank\" href=\"http://localhost:4200\">http://localhost:4200</a></p>\n  <prism-block [code]=\"cli\" [language]=\"'javascript'\"></prism-block>\n</div>"
 
 /***/ }),
 

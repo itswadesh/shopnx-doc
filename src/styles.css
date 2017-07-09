@@ -17,7 +17,7 @@ em {
     border-radius: 3px;
     letter-spacing: 1.5px;
 }
-.mat-card{
+.row .mat-card{
   width: 250px;
   height: 80px;
   flex:1 1 auto;

@@ -19,11 +19,10 @@ export class BackComponent implements OnInit {
       , { h2: 'User roles', p: '- Administrator, User, Manager' }
       , { h2: 'Quality Code', p: 'Secure and quality code - Takes care all single page web app standards' }
       , { h2: 'Secure', p: 'Securely built and prevent security attacks' }
-      , { h2: 'CRUD Generator', p: 'Generates CRUD(Create, Read, Update, Delete) pages automatically from database.' }
       , { h2: 'ReST API', p: 'NodeJS based ReST API architecture' }
       , { h2: 'Date picker', p: 'Integrated material designed date picker for date fields' }
       , { h2: 'Modular Code', p: 'Code is Modular, Maintainable, Well Structured, Easy to customize, Production Ready' }
-      , { h2: 'HTML Components Generator', p: 'Automatically generates dropdowns, datepickers, number field, toggle switch based on field types' }
+      , { h2: 'Multivendor', p: 'Different vendors can manage their own products' }
       , { h2: 'Exportable', p: 'Easily export the table as Excel, JSON, txt format' }
     ];
   }

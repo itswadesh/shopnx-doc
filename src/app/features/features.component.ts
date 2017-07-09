@@ -24,12 +24,11 @@ export class FeaturesComponent implements OnInit {
     ]
     this.why = [
       { h: 'Drag and drop category selection', i: 'playlist_add', c: 'fill: #FF5722' },
-      { h: 'AngularJS Shopping Cart', i: 'shopping_basket', c: 'fill:#DE140E' },
+      { h: 'Angular Shopping Cart', i: 'shopping_basket', c: 'fill:#DE140E' },
       { h: 'Local + OAUTH login', i: 'lock_outline', c: 'fill: #2196F3' },
       { h: 'Email integration', i: 'email', c: 'fill: #FABD0E' },
       { h: 'PayPal Checkout', i: 'account_balance_wallet', c: 'fill: #795548' },
       { h: 'Material Design', i: 'devices', c: 'fill: #ab47bc' },
-      { h: 'CRUD Generator', i: 'settings', c: 'fill: #3949ab' },
       { h: 'Image uploader', i: 'collections', c: 'fill: #8bc34a' },
       { h: 'ReST API based backend', i: 'http', c: 'fill: #26a69a' }
     ]
@@ -39,13 +38,11 @@ export class FeaturesComponent implements OnInit {
       , { h2: 'Ratings', p: 'Product Ratings feature' }
       , { h2: 'Coupons', p: 'Ability yo manage discount coupons on cart total', i: 'settings' }
       , { h2: 'Media Management', p: 'With integrated drag and drop image upload its easy to manage the images for the whole shop' }
-      , { h2: 'NodeJS Module', p: 'ES6 module structure for serve side programming.' }
       , { h2: 'Order Management', p: 'PayPal integration with orders' }
       , { h2: 'User Roles', p: 'Role based user management for both client and server side e.g. User, Manager, Administrator' }
       , { h2: 'Email Integration', p: 'Now an email is sent as soon as a order is placed or payment failed' }
       , { h2: 'Material Design', p: 'Mobile Centered Material Designed components with accessibility support' }
       , { h2: 'New Design Principle', p: 'Flex based page design principle' }
-      , { h2: 'CRUD Table', p: 'Free Material CRUD Table module comes with this Material Shop' }
       , { h2: 'Image Selector', p: 'Directly select image for a product from the media gallery' }
       , { h2: 'Cloning', p: 'Now Clone any brand, country, shipping, coupon to save time' }
       , { h2: 'Multi Level Category', p: 'Drag and drop category management upto 10 levels' }

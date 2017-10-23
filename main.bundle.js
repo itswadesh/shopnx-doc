@@ -554,7 +554,7 @@ var InstallationComponent = (function () {
     }
     InstallationComponent.prototype.ngOnInit = function () {
         this.mongo = "C:/Program Files/MongoDB/Server/3.2/bin/mongod.exe";
-        this.cli = "npm i\nnpm start";
+        this.cli = "npm i\nnpm run dev";
         this.dist = "npm run prod";
     };
     InstallationComponent = __decorate([
